@@ -1,0 +1,31 @@
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+}
+
+#hero,
+footer {
+    background-color: #1f2937;
+}
+
+#hero h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+#hero h3,
+#hero a {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+#hero > header > svg {
+    font-size: 24px;
+    fill: #f9faf8;
+}
+
+/* Layout */
+#hero > header {
+    display: flex;
+}
