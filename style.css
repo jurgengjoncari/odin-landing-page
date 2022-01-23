@@ -3,6 +3,11 @@ body {
     margin: 0;
 }
 
+section {
+    margin: auto;
+    /* width: 1025px; */
+}
+
 #hero,
 footer {
     background-color: #1f2937;
@@ -14,18 +19,139 @@ footer {
     color: #f9faf8;
 }
 
-#hero h3,
-#hero a {
+#hero p,
+#hero a,
+footer {
     font-size: 18px;
     color: #e5e7eb;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 #hero > header > svg {
     font-size: 24px;
     fill: #f9faf8;
+    flex-shrink: 0;
+}
+
+#hero button {
+    border-style: none;
 }
 
 /* Layout */
 #hero > header {
     display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+    align-items: center;
+    padding: 16px;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    margin: auto;
+    padding: 120px;
+    gap: 32px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#content svg {
+    flex-shrink: 0;
+}
+
+button,
+#cta > div {
+    background-color: #3882f6;
+}
+
+button {
+    border-radius: 8px;
+    font-size: large;
+    border: 2px solid white;
+    padding: 8px 24px;
+    color: white;
+}
+
+/* INFO */
+
+#info svg rect {
+    stroke: #3882f6;
+}
+
+#info > h3 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    width: 1000px;
+    margin: auto;
+    padding: 56px;
+    text-align: center;
+}
+
+#info > div {
+    display: flex;
+    text-align: center;
+    gap: 32px;
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 120px;
+}
+
+#quote {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    padding: 120px;
+}
+
+blockquote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    max-width: 1000px;
+    margin: auto;
+}
+
+figcaption {
+    font-weight: bolder;
+    font-size: 24px;
+    text-align: right;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#cta > div {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cta {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    color: #f9faf8;
+}
+
+footer {
+    text-align: center;
+    padding: 18px;
 }
